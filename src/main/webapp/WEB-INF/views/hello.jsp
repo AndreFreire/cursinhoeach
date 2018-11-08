@@ -7,9 +7,8 @@
 <title>Spring Boot</title>
 </head>
 <body>
-  <h1>Spring Boot - MVC web application example</h1>
-  <hr>
-
+  <jsp:include page="/WEB-INF/views/cabecalho.jsp"/>
+  
   <h2>Your name is ${name}</h2>
 
 </body>

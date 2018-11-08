@@ -11,8 +11,7 @@
 <title>Spring Boot</title>
 </head>
 <body>
-  <h1>Cursinho each example</h1>
-  <hr>
+	<jsp:include page="/WEB-INF/views/cabecalho.jsp"/>
 
   <div class="form">
     <form action="hello" method="post" onsubmit="return validate()">

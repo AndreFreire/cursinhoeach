@@ -1,4 +1,4 @@
-package com.cursinhoeach.cursinhoeach.controller;
+package com.cursinhoeach.cursinhoeach.controller.home;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,14 +9,9 @@ import org.springframework.web.bind.annotation.RequestParam;
 @Controller
 public class HomeController {
 
-	@GetMapping("/")
+	@GetMapping("/home")
 	public String index() {
 		return "index";
 	}
 	
-	@PostMapping("/hello")
-	public String sayhello(@RequestParam("name") String name, Model model) {
-		model.addAttribute("name",name);
-		return "hello";
-	}
 }

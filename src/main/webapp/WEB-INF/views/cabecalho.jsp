@@ -1,7 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- https://codepen.io/dhanushbadge/pen/olsvi -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="/resources/css/home.css">
+<title>Home</title>
+</head>
+<body>
 <nav class="dropdownmenu">
   <ul>
-    <li><a href="#">Início</a></li>
+    <li><a href="#">Inicio</a></li>
     <li><a href="#">Disciplinas</a></li>
     <li><a href="#">Professores</a>
      
@@ -16,3 +26,5 @@
     <li><a href="#">Portal do Aluno</a></li>
   </ul>
 </nav>
+</body>
+</html>
