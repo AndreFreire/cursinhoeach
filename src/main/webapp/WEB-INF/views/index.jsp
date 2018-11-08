@@ -10,8 +10,7 @@
 
 <title>Spring Boot</title>
 </head>
-<body>
-	<jsp:include page="/WEB-INF/views/cabecalho.jsp"/>
+	<jsp:include page="/WEB-INF/views/header.jsp"/>
 
   <div class="form">
     <form action="hello" method="post" onsubmit="return validate()">
@@ -25,5 +24,3 @@
     </form>
   </div>
 
-</body>
-</html>

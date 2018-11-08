@@ -1,5 +1,20 @@
 /* https://codepen.io/dhanushbadge/pen/olsvi */
 
+body{
+	margin-left:13.5%;
+	margin-right:13.5%;
+}
+
+header img {
+	height: 30%;
+	
+}
+
+header .address {
+
+	float: right;
+}
+
 .dropdownmenu ul, .dropdownmenu li {
 	margin: 0;
 	padding: 0;
