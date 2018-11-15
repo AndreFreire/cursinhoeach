@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class CursinhoeachApplication {
-//init
+	
 	public static void main(String[] args) {
 		SpringApplication.run(CursinhoeachApplication.class, args);
 	}

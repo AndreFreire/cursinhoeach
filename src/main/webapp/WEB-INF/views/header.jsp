@@ -6,28 +6,40 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 <link rel="stylesheet" href="/resources/css/header.css">
+<script type="text/javascript" src="/resources/js/app.js"></script>
+<title>${title}</title>
 </head>
 <body>
 	<header>
-		<img src="/resources/image/logo.jpg">
+		<img src="resources/images/logo.png">
 		<div class="address">
-		<h4>Escola de Artes, Ciências e Humanidades</h4>
-		<h4>Universidade de São Paulo</h4>
-		<h4>Rua Arlindo Béttio, 1000 - Jardim Keralux</h4>
+			<h4>Escola de Artes, Ciências e Humanidades</h4>
+			<h4>Universidade de São Paulo</h4>
+			<h4>Rua Arlindo Béttio, 1000 - Jardim Keralux</h4>
 		</div>
-	</header>
-	<nav class="dropdownmenu">
+		<nav class="dropdownmenu">
 		<ul>
-			<li><a href="#">Inicio</a></li>
-			<li><a href="#">Disciplinas</a></li>
-			<li><a href="#">Professores</a>
+			<li><a href="home">Inicio</a></li>
+			<li><a>Disciplinas</a>
 				<ul id="submenu">
-					<li><a href="#">Difference between SVG vs. Canvas</a></li>
-					<li><a href="#">New features in HTML5</a></li>
-					<li><a href="#">Creating links to sections</a></li>
+					<li><a href="#">Biologia</a></li>
+					<li><a href="#">Filosofia</a></li>
+					<li><a href="#">Física</a></li>
+					<li><a href="#">Geografia</a></li>
+					<li><a href="#">História</a></li>
+					<li><a href="#">Inglês</a></li>
+					<li><a href="#">Literatura</a></li>
+					<li><a href="#">Matemática</a></li>
+					<li><a href="#">Português</a></li>
+					<li><a href="#">Química</a></li>
+					<li><a href="#">Sociologia</a></li>
 				</ul></li>
+			<li><a href="#">Professores</a></li>
 			<li><a href="#">Aulas</a></li>
 			<li><a href="#">Portal do Aluno</a></li>
 		</ul>
-	</nav>
+	</nav> 
+	</header>
+	

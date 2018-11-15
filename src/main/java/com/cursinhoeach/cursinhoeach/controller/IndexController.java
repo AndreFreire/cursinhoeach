@@ -10,13 +10,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class IndexController {
 
 	@GetMapping("/")
-	public String index() {
+	public String index(Model model) {
+		model.addAttribute("title", "Home");
 		return "index";
-	}
-	
-	@PostMapping("/hello")
-	public String sayhello(@RequestParam("name") String name, Model model) {
-		model.addAttribute("name",name);
-		return "hello";
 	}
 }
