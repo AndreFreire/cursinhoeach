@@ -13,7 +13,7 @@
 </head>
 <body>
 	<header>
-		<img src="resources/images/logo.png">
+		<a href="home"><img src="resources/images/logo.png"></a>
 		<div class="address">
 			<h4>Escola de Artes, Ciências e Humanidades</h4>
 			<h4>Universidade de São Paulo</h4>
@@ -24,21 +24,21 @@
 			<li><a href="home">Inicio</a></li>
 			<li><a>Disciplinas</a>
 				<ul id="submenu">
-					<li><a href="#">Biologia</a></li>
-					<li><a href="#">Filosofia</a></li>
-					<li><a href="#">Física</a></li>
-					<li><a href="#">Geografia</a></li>
-					<li><a href="#">História</a></li>
-					<li><a href="#">Inglês</a></li>
-					<li><a href="#">Literatura</a></li>
-					<li><a href="#">Matemática</a></li>
-					<li><a href="#">Português</a></li>
-					<li><a href="#">Química</a></li>
-					<li><a href="#">Sociologia</a></li>
+					<li><a href="biologia">Biologia</a></li>
+					<li><a href="filosofia">Filosofia</a></li>
+					<li><a href="fisica">Física</a></li>
+					<li><a href="geografia">Geografia</a></li>
+					<li><a href="historia">História</a></li>
+					<li><a href="ingles">Inglês</a></li>
+					<li><a href="literatura">Literatura</a></li>
+					<li><a href="matematica">Matemática</a></li>
+					<li><a href="portugues">Português</a></li>
+					<li><a href="quimica">Química</a></li>
+					<li><a href="sociologia">Sociologia</a></li>
 				</ul></li>
-			<li><a href="#">Professores</a></li>
-			<li><a href="#">Aulas</a></li>
-			<li><a href="#">Portal do Aluno</a></li>
+			<li><a href="professores">Professores</a></li>
+			<li><a href="aulas">Aulas</a></li>
+			<li><a href="portal">Portal do Aluno</a></li>
 		</ul>
 	</nav> 
 	</header>
