@@ -4,7 +4,12 @@
 
 
 <footer>
-<!-- colocar as páginas do face instagran essas paradas -->
+<!-- 	<div class="description"> -->
+<!-- 		<a href="https://www.facebook.com/CursinhoPopularEACH/"> <i -->
+<!-- 			class="fa fa-facebook-square"></i> -->
+<!-- 			<h4>Cursinho Popular Each</h4> -->
+<!-- 		</a> -->
+<!-- 	</div> -->
 </footer>
 </body>
 </html>

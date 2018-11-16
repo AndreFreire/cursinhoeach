@@ -1,4 +1,4 @@
-var i = 0;
+/*var i = 0;
 window.onload = (function() {
 	var elements = document.getElementById('home').children;
 	window.setInterval(function() {
@@ -10,4 +10,4 @@ window.onload = (function() {
 		elements[i].style.display = "block";
 		
 	}, 7000);
-});
+});*/
