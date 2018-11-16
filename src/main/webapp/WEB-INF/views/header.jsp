@@ -8,7 +8,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
 <link rel="stylesheet" href="/resources/css/header.css">
-<script type="text/javascript" src="/resources/js/app.js"></script>
+<link rel="stylesheet" href="/resources/css/home.css">
+<link rel="stylesheet" href="/resources/css/body.css">
 <title>${title}</title>
 </head>
 <body>
