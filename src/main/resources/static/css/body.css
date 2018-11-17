@@ -19,7 +19,21 @@ section{
 	height:100%;
 	float: left;
 }
+section hr{
+	width:100%;
+	position:absolute;
+	margin-top:0.7em;
+	
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
 
+.padrao{
+	margin-left:3%;
+	width:70%;
+	height: 70%;
+	position:absolute;
+}
 .carousel{
 	padding:0.2%;
 	padding-right:0.2%;
@@ -42,7 +56,7 @@ section{
 .carousel .carousel-inner .carousel-item .carousel-caption{
 	border:solid;
 	color:white;
-	font: bold 1em sans-serif;
+	font: bold 1em cursive;
 }
 
 .carousel .carousel-inner .carousel-item img{

@@ -1,0 +1,39 @@
+/* https://codepen.io/dhanushbadge/pen/olsvi */
+footer {
+	float: left;
+	width: 100%;
+	height: 1.2em;
+	margin-top: 0.2em;
+	
+}
+
+footer .description i {
+	display: inline-block;
+	color: blue;
+	font-size: 22px;
+	position: inherit;
+	
+}
+
+footer .description h4 {
+	display: inline-block;
+	position: inherit;
+	margin-top: -10%;
+	
+}
+
+footer .description a {
+	position: inherit;
+	text-decoration-line: none;
+	color: black;
+	
+}
+
+footer .description {
+	
+	float: center;
+	position: inherit;
+	margin-left:40%;
+	width: 12em;
+	height: 100%;
+}
