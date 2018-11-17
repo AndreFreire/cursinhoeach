@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- https://codepen.io/dhanushbadge/pen/olsvi -->
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="shortcut icon" href="/resources/images/logo.png" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
@@ -75,8 +76,7 @@
 						</div></li>
 					<li class="nav-item  "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1"  href="professores">Professores</a></li>
 					<li class="nav-item "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1 "   href="aulas">Aulas</a></li>
-					<li class="nav-item  "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1"  href="portal">Portal do
-							Aluno</a></li>
+					<li class="nav-item  "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1"  href="portal">Portal</a></li>
 				</ul>
 			</div>
 		</nav> 

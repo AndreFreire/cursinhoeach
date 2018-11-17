@@ -2,8 +2,10 @@
 	pageEncoding="ISO-8859-1"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
+</body>
 
 <footer>
+<!-- <hr /> -->
 <!-- 	<div class="description"> -->
 <!-- 		<a href="https://www.facebook.com/CursinhoPopularEACH/"> <i -->
 <!-- 			class="fa fa-facebook-square"></i> -->
@@ -11,5 +13,4 @@
 <!-- 		</a> -->
 <!-- 	</div> -->
 </footer>
-</body>
 </html>
