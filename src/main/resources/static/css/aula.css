@@ -20,9 +20,3 @@ section .table a:hover{
 	text-decoration:underline;
 	color: #0094FF;
 }
-
-.aulas h3{
-	margin-top:0.2em;
-	font-family: cursive;
-	color: black;
-}

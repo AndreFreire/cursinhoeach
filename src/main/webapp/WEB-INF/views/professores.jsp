@@ -7,7 +7,7 @@
 <script src="/resources/js/teachers.js"></script>
 <link rel="stylesheet" href="/resources/css/teachers.css">
 </head>
-<section class="padrao aulas">
+<section class="padrao">
 	<h3>Professores</h3>
 	<hr />
 
@@ -44,15 +44,14 @@
 					<a href="filosofia"></a>
 					<div>
 						<h2>Levi Gomes</h2>
-						<p>Professor de filosofia</p>
+						<p>Professor de filosofia e sociologia</p>
 					</div>
 					<a href="filosofia"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/fisica.png" />
+				<img src="/resources/images/teachers/fisica.png" />
 				<div class="gallery-item-caption">
 					<a href="fisica"></a>
 					<div>
@@ -62,10 +61,9 @@
 					<a href="fisica"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/geografia.png" />
+				<img src="/resources/images/teachers/geografia.png" />
 				<div class="gallery-item-caption">
 					<a href="geografia"></a>
 					<div>
@@ -75,10 +73,9 @@
 					<a href="geografia"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/historia.png" />
+				<img src="/resources/images/teachers/historia.png" />
 				<div class="gallery-item-caption">
 					<a href="historia"></a>
 					<div>
@@ -88,10 +85,9 @@
 					<a href="historia"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/ingles.png" />
+				<img src="/resources/images/teachers/ingles.png" />
 				<div class="gallery-item-caption">
 					<a href="ingles"></a>
 					<div>
@@ -101,10 +97,9 @@
 					<a href="ingles"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/literatura.png" />
+				<img src="/resources/images/teachers/literatura.png" />
 				<div class="gallery-item-caption">
 					<a href="literatura"></a>
 					<div>
@@ -114,10 +109,9 @@
 					<a href="literatura"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/matematica.png" />
+				<img src="/resources/images/teachers/matematica.png" />
 				<div class="gallery-item-caption">
 					<a href="matematica"></a>
 					<div>
@@ -127,10 +121,9 @@
 					<a href="matematica"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/portugues.png" />
+				<img src="/resources/images/teachers/portugues.png" />
 				<div class="gallery-item-caption">
 					<a href="portugues"></a>
 					<div>
@@ -140,10 +133,9 @@
 					<a href="portugues"></a>
 				</div>
 			</div>
-			
+
 			<div class="gallery-item ">
-				<img
-					src="/resources/images/teachers/quimica.png" />
+				<img src="/resources/images/teachers/quimica.png" />
 				<div class="gallery-item-caption">
 					<a href="quimica"></a>
 					<div>

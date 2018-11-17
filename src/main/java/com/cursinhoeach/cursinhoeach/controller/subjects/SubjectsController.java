@@ -10,67 +10,67 @@ public class SubjectsController {
 	@GetMapping("/biologia")
 	public String biologia(Model model) {
 		model.addAttribute("title", "Biologia");
-		return "biologia";
+		return "materia";
 	}
 	
 	@GetMapping("/filosofia")
 	public String filosofia(Model model) {
 		model.addAttribute("title", "Filosofia");
-		return "filosofia";
+		return "materia";
 	}
 	
 	@GetMapping("/fisica")
 	public String fisica(Model model) {
 		model.addAttribute("title", "Física");
-		return "fisica";
+		return "materia";
 	}
 	
 	@GetMapping("/geografia")
 	public String geografia(Model model) {
 		model.addAttribute("title", "Geografia");
-		return "geografia";
+		return "materia";
 	}
 	
 	@GetMapping("/historia")
 	public String historia(Model model) {
 		model.addAttribute("title", "História");
-		return "historia";
+		return "materia";
 	}
 	
 	@GetMapping("/ingles")
 	public String ingles(Model model) {
 		model.addAttribute("title", "Inglês");
-		return "ingles";
+		return "materia";
 	}
 	
 	@GetMapping("/literatura")
 	public String literatura(Model model) {
 		model.addAttribute("title", "Literatura");
-		return "literatura";
+		return "materia";
 	}
 	
 	@GetMapping("/matematica")
 	public String matematica(Model model) {
-		model.addAttribute("title", "matemática");
-		return "matematica";
+		model.addAttribute("title", "Matemática");
+		return "materia";
 	}
 	
 	@GetMapping("/portugues")
 	public String portugues(Model model) {
 		model.addAttribute("title", "Português");
-		return "portugues";
+		return "materia";
 	}
 	
 	@GetMapping("/quimica")
 	public String quimica(Model model) {
 		model.addAttribute("title", "Química");
-		return "quimica";
+		return "materia";
 	}
 	
 	
 	@GetMapping("/sociologia")
 	public String sociologia(Model model) {
 		model.addAttribute("title", "Sociologia");
-		return "sociologia";
+		return "materia";
 	}
 }

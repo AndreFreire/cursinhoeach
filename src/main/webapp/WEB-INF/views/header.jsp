@@ -32,6 +32,7 @@
 <link rel="stylesheet" href="/resources/css/home.css">
 <link rel="stylesheet" href="/resources/css/body.css">
 <link rel="stylesheet" href="/resources/css/materia.css">
+<link rel="stylesheet" href="/resources/css/grade.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
 <link rel="stylesheet" href="/resources/css/aula.css">
 <title>${title}</title>
