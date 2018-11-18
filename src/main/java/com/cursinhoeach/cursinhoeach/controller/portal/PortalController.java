@@ -7,6 +7,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.cursinhoeach.cursinhoeach.controller.subjects.SubjectModelMock;
+
 @Controller
 public class PortalController {
 
@@ -26,7 +28,13 @@ public class PortalController {
 		if (session.getAttribute("usuarioInvalido") == null || (boolean) session.getAttribute("usuarioInvalido")) {
 			return "redirect:portal-login";
 		}
+		
 		model.addAttribute("title", "Portal");
+		model.addAttribute("nome","Luis");
+		model.addAttribute("sobrenome","Henrique");
+		model.addAttribute("materia","Biologia");
+		model.addAttribute("tipoUsuario", "1");//0 = aluno; 1 = professor; 2 = admin
+		model.addAttribute("model",SubjectModelMock.biologia());
 		return "portal";
 	}
 
