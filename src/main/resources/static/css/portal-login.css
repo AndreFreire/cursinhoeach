@@ -1,0 +1,48 @@
+#loginWindow {
+  width:30%;
+  margin-top: 7.5%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+#wrapper #loginWindow .input-group{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width:100%;
+}
+
+#wrapper #loginWindow .input-group-text{
+  color:black;
+  width:4.7em;
+  
+}
+#wrapper #loginWindow .left {
+  float: right;
+  font-size: 2em;
+  color:black;
+}
+
+
+#wrapper #loginWindow .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:black;
+  
+}
+
+.btn-outline-dark:hover{
+	background-color:#DBE1FF;
+	
+	font-weight:600;
+}
+
+.page-header{
+	border-bottom:solid black 1px;
+	padding-right:4%;
+}
+#wrapper #loginWindow .page-header h1{
+  color:black;
+  margin-left:0.2em;
+}

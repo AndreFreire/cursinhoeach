@@ -13,6 +13,10 @@
 <link href="https://fonts.googleapis.com/css?family=Signika"
 	rel="stylesheet">
 <link
+	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+	rel="stylesheet">
+
+<link
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
 	rel="stylesheet"
 	integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
@@ -36,6 +40,9 @@
 <link rel="stylesheet" href="/resources/css/grade.css">
 <link rel="stylesheet" href="/resources/css/footer.css">
 <link rel="stylesheet" href="/resources/css/aula.css">
+<link rel="stylesheet" href="/resources/css/portal.css">
+<link rel="stylesheet" href="/resources/css/portal-login.css">
+
 <title>${title}</title>
 </head>
 <body>
@@ -46,21 +53,22 @@
 			<h4>Universidade de São Paulo</h4>
 			<h4>Rua Arlindo Béttio, 1000 - Jardim Keralux</h4>
 		</div>
-		 <nav class="navbar navbar-expand-sm navbar-light navbar-custom">
+		<nav class="navbar navbar-expand-sm navbar-light navbar-custom">
 			<button class="navbar-toggler" type="button" data-toggle="collapse"
 				data-target="#navbarSupportedContent"
 				aria-controls="navbarSupportedContent" aria-expanded="false"
 				aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse"
-				id="navbarSupportedContent">
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
-					<li class="nav-item"><a class="nav-link ml-xl-3 ml-lg-2 ml-md-1 px-xl-5 px-lg-5 px-md-3 px-sm-1"  href="home">Inicio</a></li>
+					<li class="nav-item"><a
+						class="nav-link ml-xl-3 ml-lg-2 ml-md-1 px-xl-5 px-lg-5 px-md-3 px-sm-1"
+						href="home">Inicio</a></li>
 					<li class="nav-item dropdown  "><a
-						class="nav-link dropdown-toggle px-xl-5 px-lg-5 px-md-3 px-sm-1 " id="navbarDropdown"
-						role="button" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false"> Disciplinas </a>
+						class="nav-link dropdown-toggle px-xl-5 px-lg-5 px-md-3 px-sm-1 "
+						id="navbarDropdown" role="button" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false"> Disciplinas </a>
 						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 							<a class="dropdown-item" href="biologia">Biologia</a> <a
 								class="dropdown-item" href="filosofia">Filosofia</a> <a
@@ -74,11 +82,15 @@
 								class="dropdown-item" href="quimica">Química</a> <a
 								class="dropdown-item" href="sociologia">Sociologia</a>
 						</div></li>
-					<li class="nav-item  "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1"  href="professores">Professores</a></li>
-					<li class="nav-item "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1 "   href="aulas">Aulas</a></li>
-					<li class="nav-item  "><a class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1"  href="portal">Portal</a></li>
+					<li class="nav-item  "><a
+						class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1"
+						href="professores">Professores</a></li>
+					<li class="nav-item "><a
+						class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1 " href="aulas">Aulas</a></li>
+					<li class="nav-item  "><a
+						class="nav-link px-xl-5 px-lg-4 px-md-3 px-sm-1" href="portal-login">Portal</a></li>
 				</ul>
 			</div>
-		</nav> 
+		</nav>
 
 	</header>
