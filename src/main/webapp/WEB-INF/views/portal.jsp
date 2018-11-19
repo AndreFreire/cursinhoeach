@@ -6,10 +6,10 @@
 <jsp:include page="/WEB-INF/views/header-portal.jsp" />
 
 <div class="apresentacao">
-	<h3>Olá, ${nome} ${sobrenome}!</h3>
+	<h3>Olá, ${pessoa.getNome()} ${pessoa.getSobrenome()}!</h3>
 </div>
 
-<c:set var="val" value="${tipoUsuario}"/>
+<c:set var="val" value="${pessoa.getTipo()}"/>
 <c:choose> 
   <c:when test="${val == '0'}">
     <jsp:include page="/WEB-INF/views/portal-aluno.jsp" />

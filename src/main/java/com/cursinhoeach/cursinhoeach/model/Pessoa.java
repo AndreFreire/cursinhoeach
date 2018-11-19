@@ -10,7 +10,7 @@ public class Pessoa {
 	private String cpf;
 	private String nome;
 	private String sobrenome;
-	private String tipo;
+	private String tipo;// 0 = aluno; 1 = professor; 2 = admin
 	private String senha;
 	public String getNome() {
 		return nome;

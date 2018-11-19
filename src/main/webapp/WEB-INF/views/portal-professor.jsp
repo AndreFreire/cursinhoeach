@@ -8,7 +8,7 @@
 	<div class="row list-subjects ">
 			<div class="col-12">
 				<ul class="list-group" id="list-group-accordion">
-					<c:forEach var="subjectTitle" items="${model.getSubjectsTitle()}" varStatus="loop">
+					<c:forEach var="subjectTitle" items="${disciplina.getSubjectsTitle()}" varStatus="loop">
 						<li class="list-group-item">
 							<h5 class="list-group-heading" data-toggle="collapse"
 								data-target="#item-${loop.index}"
@@ -18,7 +18,7 @@
 							<div id="item-${loop.index}" class="collapse">
 								<ul class="list-group">
 									<c:forEach var="subjectSet"
-										items="${model.getSubjectContent(subjectTitle)}">
+										items="${disciplina.getSubjectContent(subjectTitle)}">
 										<li class="list-group-item">
 										<a href="${subjectSet.getValue()}">
 										${subjectSet.getKey()}

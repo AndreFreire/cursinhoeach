@@ -13,5 +13,9 @@ public interface DisciplinaRepository extends CrudRepository<Disciplina,Long> {
 	
 	@Query(value ="SELECT * FROM disciplina where disciplina=:subject",nativeQuery=true)
 	List<Disciplina> findMateria(@Param("subject") String subject);
-
+	
+	@Query(value ="SELECT disciplina FROM disciplina where cpf=:cpf limit 1",nativeQuery=true)
+	String findProfessorDisciplina(@Param("cpf") String cpf);
+	
+	
 }
