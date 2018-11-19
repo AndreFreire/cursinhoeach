@@ -1,38 +1,32 @@
 #wrapper {
-  width: 100%;
-  min-height: 85%;
-  font-family:sans-serif;
-  margin-top: 4%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom:3%;
-  clear: both;
-  border:1px solid black;	
-  background-color:#FCFCFC;
-
+	width: 100%;
+	min-height: 85%;
+	font-family: sans-serif;
+	margin-top: 4%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 3%;
+	clear: both;
+	border: 1px solid black;
+	background-color: #FCFCFC;
 }
 
-#wrapper .apresentacao{
-	border-bottom:1px solid black;
-	margin-left:5%;
-	margin-bottom:2%;
-	padding-left:1%;
-	margin-right:5%;
-	margin-top:1.5%;
-	
+#wrapper .apresentacao {
+	border-bottom: 1px solid black;
+	margin-left: 5%;
+	margin-bottom: 2%;
+	padding-left: 1%;
+	margin-right: 5%;
+	margin-top: 1.5%;
 }
 
-.subject-teacher{
-	padding-left:8%;
-	padding-right:8%;
-	padding-bottom:1%;
-	color:black;
+.subject-teacher {
+	padding-left: 8%;
+	padding-right: 8%;
+	padding-bottom: 1%;
+	color: black;
 }
 
-.subject-teacher > h4{
-	color:#00147A;
-}
-
-.subject-teacher a{
-	
+.subject-teacher>h4 {
+	color: #00147A;
 }

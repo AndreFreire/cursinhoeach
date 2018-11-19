@@ -33,7 +33,7 @@ public class PortalController {
 		model.addAttribute("nome","Luis");
 		model.addAttribute("sobrenome","Henrique");
 		model.addAttribute("materia","Biologia");
-		model.addAttribute("tipoUsuario", "1");//0 = aluno; 1 = professor; 2 = admin
+		model.addAttribute("tipoUsuario", "2");//0 = aluno; 1 = professor; 2 = admin
 		model.addAttribute("model",SubjectModelMock.biologia());
 		return "portal";
 	}
