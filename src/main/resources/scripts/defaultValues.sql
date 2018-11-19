@@ -10,3 +10,5 @@ insert into disciplina(cpf,disciplina, grupo, conteudo, link) values("456","Biol
 insert into disciplina(cpf,disciplina, grupo, conteudo, link) values("456","Biologia","Embriologia Animal", "Segmentação (clivagem): tipos", "https://www.10emtudo.com.br/aula/vestibular/segmentacao_clivagem_tipos/");
 insert into disciplina(cpf,disciplina, grupo, conteudo, link) values("456","Biologia","Embriologia Animal", "Desenvolvimento Embrionário do Anfioxo", "https://www.10emtudo.com.br/aula/vestibular/desenvolvimento_embrionario_do_anfioxo/");
 insert into disciplina(cpf,disciplina, grupo, conteudo, link) values("456","Biologia","Embriologia Animal", "Folhetos Embrionários: tipos e funções", "https://www.10emtudo.com.br/aula/vestibular/folhetos_embrionarios_tipos_e_funcoes/");
+
+SELECT * FROM disciplina where disciplina='Biologia'

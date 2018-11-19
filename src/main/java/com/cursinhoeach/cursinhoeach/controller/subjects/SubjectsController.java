@@ -1,18 +1,25 @@
 package com.cursinhoeach.cursinhoeach.controller.subjects;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.cursinhoeach.cursinhoeach.repository.DisciplinaRepository;
+
+
 @Controller
 public class SubjectsController {
-
+	
+	@Autowired
+	DisciplinaRepository disciplinaRepository;
+	
 	@GetMapping("/biologia")
 	public String biologia(Model model) {
 		model.addAttribute("title", "Biologia");
 		model.addAttribute("image","biologia.jpg");
 		model.addAttribute("description",Descriptions.biologiaDescription);
-		model.addAttribute("model",SubjectModelMock.biologia());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Biologia")));
 		return "materia";
 	}
 	
@@ -21,7 +28,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Filosofia");
 		model.addAttribute("image","filosofia.jpg");
 		model.addAttribute("description",Descriptions.filosofiaDescription);
-		model.addAttribute("model",SubjectModelMock.filosofia());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Filosofia")));
 		return "materia";
 	}
 	
@@ -30,7 +37,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Física");
 		model.addAttribute("image","fisica.jpg");
 		model.addAttribute("description",Descriptions.fisicaDescription);
-		model.addAttribute("model",SubjectModelMock.fisica());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Fisica")));
 		return "materia";
 	}
 	
@@ -39,7 +46,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Geografia");
 		model.addAttribute("image","geografia.jpg");
 		model.addAttribute("description",Descriptions.geografiaDescription);
-		model.addAttribute("model",SubjectModelMock.geografia());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Geografia")));
 		return "materia";
 	}
 	
@@ -48,7 +55,7 @@ public class SubjectsController {
 		model.addAttribute("title", "História");
 		model.addAttribute("image","historia.jpg");
 		model.addAttribute("description",Descriptions.historiaDescription);
-		model.addAttribute("model",SubjectModelMock.historia());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Historia")));
 		return "materia";
 	}
 	
@@ -57,7 +64,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Inglês");
 		model.addAttribute("image","ingles.jpg");
 		model.addAttribute("description",Descriptions.inglesDescription);
-		model.addAttribute("model",SubjectModelMock.ingles());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Ingles")));
 		return "materia";
 	}
 	
@@ -66,7 +73,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Literatura");
 		model.addAttribute("image","literatura.jpg");
 		model.addAttribute("description",Descriptions.literaturaDescription);
-		model.addAttribute("model",SubjectModelMock.literatura());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Literatura")));
 		return "materia";
 	}
 	
@@ -75,7 +82,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Matemática");
 		model.addAttribute("image","matematica.jpg");
 		model.addAttribute("description",Descriptions.matematicaDescription);
-		model.addAttribute("model",SubjectModelMock.matematica());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Matematica")));
 		return "materia";
 	}
 	
@@ -84,7 +91,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Português");
 		model.addAttribute("image","portugues.jpg");
 		model.addAttribute("description",Descriptions.portuguesDescription);
-		model.addAttribute("model",SubjectModelMock.portugues());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Portugues")));
 		return "materia";
 	}
 	
@@ -93,7 +100,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Química");
 		model.addAttribute("image","quimica.jpg");
 		model.addAttribute("description",Descriptions.quimicaDescription);
-		model.addAttribute("model",SubjectModelMock.quimica());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Quimica")));
 		return "materia";
 	}
 	
@@ -103,7 +110,7 @@ public class SubjectsController {
 		model.addAttribute("title", "Sociologia");
 		model.addAttribute("image","sociologia.jpg");
 		model.addAttribute("description",Descriptions.sociologiaDescription);
-		model.addAttribute("model",SubjectModelMock.sociologia());
+		model.addAttribute("model",new SubjectModel(disciplinaRepository.findMateria("Sociologia")));
 		return "materia";
 	}
 }

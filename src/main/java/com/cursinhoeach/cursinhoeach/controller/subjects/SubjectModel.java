@@ -7,9 +7,21 @@ import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 
+import com.cursinhoeach.cursinhoeach.model.Disciplina;
+
 public class SubjectModel {
 
 	private Map<String, List<Entry<String, String>>> subject = new HashMap<>();
+
+	public SubjectModel(Iterable<Disciplina> disciplina) {
+		for (Disciplina atual : disciplina) {
+			addSubject(atual.getGrupo(), atual.getConteudo(), atual.getLink());
+		}
+	}
+	
+	SubjectModel(){
+		
+	}
 
 	public List<String> getSubjectsTitle() {
 		List<String> subjectTitle = new ArrayList<>();
@@ -26,7 +38,6 @@ public class SubjectModel {
 			subject.put(title, new ArrayList<Entry<String, String>>());
 		}
 		subject.get(title).add(new AbstractMap.SimpleEntry<String, String>(content, link));
-
 	}
 
 }

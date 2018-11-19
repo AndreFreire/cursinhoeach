@@ -34,5 +34,7 @@ create table disciplina(
     link varchar(2555) not null,
     conteudo varchar(255) not null,
     grupo varchar(255) not null,
-    CONSTRAINT PK_disciplina PRIMARY KEY (cpf,disciplina,grupo,conteudo)
+    CONSTRAINT PK_disciplina PRIMARY KEY (disciplina,grupo,conteudo)
 );
+
+drop table disciplina
