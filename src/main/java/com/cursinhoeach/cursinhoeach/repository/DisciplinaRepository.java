@@ -8,14 +8,15 @@ import org.springframework.data.repository.query.Param;
 
 import com.cursinhoeach.cursinhoeach.model.Disciplina;
 
+public interface DisciplinaRepository extends CrudRepository<Disciplina, Integer> {
 
-public interface DisciplinaRepository extends CrudRepository<Disciplina,Long> {
-	
-	@Query(value ="SELECT * FROM disciplina where disciplina=:subject",nativeQuery=true)
-	List<Disciplina> findMateria(@Param("subject") String subject);
-	
-	@Query(value ="SELECT disciplina FROM disciplina where cpf=:cpf limit 1",nativeQuery=true)
-	String findProfessorDisciplina(@Param("cpf") String cpf);
-	
+	@Query(value = "SELECT * FROM disciplina where nomeDisciplina=:nomeDisciplina", nativeQuery = true)
+	List<Disciplina> findMateria(@Param("nomeDisciplina") String nomeDisciplina);
+
+	@Query(value = "SELECT nomedisciplina FROM disciplina where idpessoa=:id limit 1", nativeQuery = true)
+	String findProfessorDisciplina(@Param("id") String id);
+
+	@Query(value = "SELECT id+1 FROM disciplina order by id DESC limit 1", nativeQuery = true)
+	int finalKey();
 	
 }

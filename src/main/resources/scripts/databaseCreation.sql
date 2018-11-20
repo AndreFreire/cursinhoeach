@@ -4,18 +4,18 @@ use Cursinho;
 create table pessoa (
      nome varchar(25) not null,
      sobrenome varchar(25) not null,
-     cpf varchar(15) not null,
+     id varchar(15) not null,
      tipo varchar(1) not null,
      senha varchar(25) not null,
-     constraint pk_cpf primary key (cpf));
+     constraint PK_id primary key (id));
 
 create table nota(
 	simulado varchar(25) not null,
-    pessoaId varchar(15) not null,
+    pessoaid varchar(15) not null,
     materia varchar(25) not null,
     nota varchar(4) not null,
-    CONSTRAINT PK_nota PRIMARY KEY (simulado,pessoaId,materia),
-    foreign key (pessoaId) references pessoa(CPF),
+    CONSTRAINT PK_nota PRIMARY KEY (simulado,pessoaid,materia),
+    foreign key (pessoaid) references pessoa(id),
     foreign key (simulado) references simulado(nome)
 );
 
@@ -23,18 +23,23 @@ create table nota(
 create table simulado(
 	nome varchar(25) not null,
     materia varchar(25) not null,
-    notaMax varchar(4) not null,
+    notamax varchar(4) not null,
+    dataRealizado date not null, 
     CONSTRAINT PK_simulado PRIMARY KEY (nome,materia)
 );
 
 
 create table disciplina(
-	cpf varchar(15) not null,
-    disciplina varchar(25) not null,
-    link varchar(2555) not null,
+	id int not null,
+	idpessoa varchar(15) not null,
+    nomedisciplina varchar(25) not null,
+    grupoconteudo varchar(255) not null,
     conteudo varchar(255) not null,
-    grupo varchar(255) not null,
-    CONSTRAINT PK_disciplina PRIMARY KEY (disciplina,grupo,conteudo)
+    link varchar(2555) not null,
+    CONSTRAINT UC_Disciplina UNIQUE (grupoConteudo,conteudo,nomeDisciplina),
+    foreign key (idPessoa) references pessoa(id),
+    CONSTRAINT PK_disciplina PRIMARY KEY (id)
 );
 
-drop table disciplina
+
+

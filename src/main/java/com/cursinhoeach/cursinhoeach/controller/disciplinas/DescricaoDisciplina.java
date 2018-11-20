@@ -1,6 +1,6 @@
-package com.cursinhoeach.cursinhoeach.controller.subjects;
+package com.cursinhoeach.cursinhoeach.controller.disciplinas;
 
-public class Descriptions {
+public class DescricaoDisciplina {
 
 	public static String biologiaDescription = "Ciência que estuda a vida e os organismos vivos, sua estrutura, crescimento, funcionamento, reprodução, origem, evolução, distribuição, bem como suas relações com o ambiente e entre si; biociência, ciências biológicas [Compreende várias outras ciências especializadas, como, p.ex., a ecologia, a bioquímica, a genética, a zoologia e a botânica.].\r\n"
 			+ "";

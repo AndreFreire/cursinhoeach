@@ -6,16 +6,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.cursinhoeach.cursinhoeach.controller.subjects.SubjectModel;
+import com.cursinhoeach.cursinhoeach.controller.disciplinas.DisciplinaControllerModel;
 import com.cursinhoeach.cursinhoeach.model.Pessoa;
 import com.cursinhoeach.cursinhoeach.repository.DisciplinaRepository;
 import com.cursinhoeach.cursinhoeach.repository.PessoaRepository;
 
 @Controller
 public class PortalController {
-
 	@Autowired
 	PessoaRepository pessoaRepository;
 
@@ -40,23 +38,16 @@ public class PortalController {
 		}
 		Pessoa p = (Pessoa) session.getAttribute("pessoa");
 		if (p.getTipo().equals("1")) {//Professor
-			String disciplina = disciplinaRepository.findProfessorDisciplina(p.getCpf());
-			model.addAttribute("materia",disciplina);
-			model.addAttribute("disciplina", new SubjectModel(disciplinaRepository.findMateria(disciplina)));
+			String disciplina = disciplinaRepository.findProfessorDisciplina(p.getId());
+			DisciplinaControllerModel disciplinaModel = new DisciplinaControllerModel(disciplinaRepository.findMateria(disciplina));
+			disciplinaModel.setMateria(disciplina);
+			session.setAttribute("pessoaid", p.getId());
+			session.setAttribute("disciplina", disciplina);
+			model.addAttribute("model",disciplinaModel );
 		}
 		return "portal";
 	}
 
-	@RequestMapping("efetuaLogin")
-	public String efetuaLogin(String login, String senha, HttpSession session) {
-		Pessoa pessoa = pessoaRepository.findPessoa(login);
-		if (pessoa != null && senha.equals(pessoa.getSenha())) {
-			session.setAttribute("pessoa", pessoa);
-			session.setAttribute("usuarioInvalido", false);
-			return "redirect:portal";
-		}
-		session.setAttribute("usuarioInvalido", true);
-		return "redirect:portal-login";
-
-	}
+	
 }
+

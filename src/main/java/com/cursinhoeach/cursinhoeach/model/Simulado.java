@@ -1,10 +1,13 @@
 package com.cursinhoeach.cursinhoeach.model;
 
+import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
 
 import com.cursinhoeach.cursinhoeach.composite.keys.SimuladoKey;
+
 
 @Entity
 @IdClass(SimuladoKey.class)
@@ -14,7 +17,9 @@ public class Simulado {
 	private String nome;
 	@Id
 	private String materia;
-	private String notaMax;
+	private String notamax;
+	private Date dataRealizado;
+	
 	public String getNome() {
 		return nome;
 	}
@@ -27,11 +32,17 @@ public class Simulado {
 	public void setMateria(String materia) {
 		this.materia = materia;
 	}
-	public String getNotaMax() {
-		return notaMax;
+	public String getNotamax() {
+		return notamax;
 	}
-	public void setNotaMax(String notaMax) {
-		this.notaMax = notaMax;
+	public void setNotamax(String notamax) {
+		this.notamax = notamax;
+	}
+	public Date getDataRealizado() {
+		return dataRealizado;
+	}
+	public void setDataRealizado(Date dataRealizado) {
+		this.dataRealizado = dataRealizado;
 	}
 	
 	

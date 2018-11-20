@@ -8,8 +8,8 @@ import com.cursinhoeach.cursinhoeach.model.Pessoa;
 
 public interface PessoaRepository extends CrudRepository<Pessoa,Long>{
 	
-	@Query(value ="SELECT * FROM pessoa where cpf=:cpf",nativeQuery=true)
-	Pessoa findPessoa(@Param("cpf") String cpf);
+	@Query(value ="SELECT * FROM pessoa where id=:id",nativeQuery=true)
+	Pessoa findPessoa(@Param("id") String id);
 
 	
 }

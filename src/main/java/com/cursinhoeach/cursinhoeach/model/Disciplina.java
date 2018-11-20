@@ -2,58 +2,62 @@ package com.cursinhoeach.cursinhoeach.model;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.IdClass;
-
-import com.cursinhoeach.cursinhoeach.composite.keys.DisciplinaKey;
 
 @Entity
-@IdClass(DisciplinaKey.class)
 public class Disciplina {
-	
-	private String cpf;
+
 	@Id
-	private String disciplina;
-	private String link;
-	@Id
+	private int id;
+	private String idpessoa;
+	private String nomedisciplina;
+	private String grupoconteudo;
 	private String conteudo;
-	@Id
-	private String grupo;
+	private String link;
 
-	
-	public Disciplina(String cpf,String disciplina, String link, String conteudo, String grupo){
-		this.cpf = cpf;
-		this.disciplina = disciplina;
-		this.link = link;
+	public Disciplina(int id,String idPessoa, String nomeDisciplina, String grupoConteudo, String conteudo, String link) {
+		this.id = id;
+		this.idpessoa = idPessoa;
+		this.nomedisciplina = nomeDisciplina;
+		this.grupoconteudo = grupoConteudo;
 		this.conteudo = conteudo;
-		this.grupo = grupo;
-	}
-	
-	Disciplina(){
-		
-	}
-	
-	public String getCpf() {
-		return cpf;
-	}
-
-	public void setCpf(String cpf) {
-		this.cpf = cpf;
-	}
-
-	public String getDisciplina() {
-		return disciplina;
-	}
-
-	public void setDisciplina(String disciplina) {
-		this.disciplina = disciplina;
-	}
-
-	public String getLink() {
-		return link;
-	}
-
-	public void setLink(String link) {
 		this.link = link;
+
+	}
+
+	public Disciplina() {
+
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getIdpessoa() {
+		return idpessoa;
+	}
+
+	public void setIdpessoa(String idpessoa) {
+		this.idpessoa = idpessoa;
+	}
+
+	public String getNomedisciplina() {
+		return nomedisciplina;
+	}
+
+	public void setNomedisciplina(String nomedisciplina) {
+		this.nomedisciplina = nomedisciplina;
+	}
+
+	public String getGrupoconteudo() {
+		return grupoconteudo;
+	}
+
+	public void setGrupoconteudo(String grupoconteudo) {
+		this.grupoconteudo = grupoconteudo;
 	}
 
 	public String getConteudo() {
@@ -64,18 +68,18 @@ public class Disciplina {
 		this.conteudo = conteudo;
 	}
 
-	public String getGrupo() {
-		return grupo;
+	public String getLink() {
+		return link;
 	}
 
-	public void setGrupo(String grupo) {
-		this.grupo = grupo;
+	public void setLink(String link) {
+		this.link = link;
 	}
 
 	@Override
 	public String toString() {
-		return "Disciplina [cpf=" + cpf + ", disciplina=" + disciplina + ", link=" + link + ", conteudo=" + conteudo
-				+ ", grupo=" + grupo + "]";
+		return "Disciplina [id=" + id + ", idpessoa=" + idpessoa + ", nomedisciplina=" + nomedisciplina
+				+ ", grupoconteudo=" + grupoconteudo + ", conteudo=" + conteudo + ", link=" + link + "]";
 	}
 
 }

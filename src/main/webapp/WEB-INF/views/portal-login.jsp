@@ -13,18 +13,18 @@
 	<form action="efetuaLogin" method="post">
 		<div class="input-group">
 			<div class="input-group-prepend">
-				<span class="input-group-text" id="basic-addon1">CPF</span>
+				<span class="input-group-text" id="basic-addon1">ID</span>
 			</div>
 			<%
 				if (session.getAttribute("usuarioInvalido") == null) {
 			%>
 
-			<input type="text" class="form-control" placeholder="CPF"
+			<input type="text" class="form-control" placeholder="ID"
 				aria-describedby="basic-addon1" name="login">
 			<%
 				} else {
 			%>
-			<input type="text" class="form-control" placeholder="CPF Invalido"
+			<input type="text" class="form-control" placeholder="ID Invalido"
 				aria-describedby="basic-addon1" name="login" style="color: red;">
 			<%
 				}

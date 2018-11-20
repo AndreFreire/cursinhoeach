@@ -28,11 +28,11 @@
 							</h5>
 							<div id="item-${loop.index}" class="collapse">
 								<ul class="list-group">
-									<c:forEach var="subjectSet"
+									<c:forEach var="subjectModel"
 										items="${model.getSubjectContent(subjectTitle)}">
 										<li class="list-group-item">
-										<a href="${subjectSet.getValue()}">
-										${subjectSet.getKey()}
+										<a href="${subjectModel.getLink()}">
+										${subjectModel.getConteudo()}
 										</a>
 										</li>
 									</c:forEach>

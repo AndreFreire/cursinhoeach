@@ -1,11 +1,11 @@
-package com.cursinhoeach.cursinhoeach.controller.home;
+package com.cursinhoeach.cursinhoeach.controller.inicio;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
-public class HomeController {
+public class InicioController {
 
 	@GetMapping("/home")
 	public String home(Model model) {
