@@ -1,0 +1,16 @@
+.table-aluno{
+	margin-left:7%;
+	margin-right:5%;
+	max-width:85%;
+	min-width:40%;
+}
+
+.table-aluno  th{ 
+ 	 
+ 	text-align:left; 
+ } 
+
+/* .table-aluno  td{ */
+/* 	max-width:10px; */
+/* 	border:solid black;	 */
+/* } */

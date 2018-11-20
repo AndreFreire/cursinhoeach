@@ -1,11 +1,9 @@
-package com.cursinhoeach.cursinhoeach.controller.disciplinas;
+package com.cursinhoeach.cursinhoeach.model;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
-import com.cursinhoeach.cursinhoeach.model.Disciplina;
 
 public class DisciplinaControllerModel {
 

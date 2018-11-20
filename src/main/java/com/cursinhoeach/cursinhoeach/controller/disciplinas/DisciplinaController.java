@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import com.cursinhoeach.cursinhoeach.model.DisciplinaControllerModel;
 import com.cursinhoeach.cursinhoeach.repository.DisciplinaRepository;
 
 

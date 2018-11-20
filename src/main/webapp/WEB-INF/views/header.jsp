@@ -42,6 +42,7 @@
 <link rel="stylesheet" href="/resources/css/aula.css">
 <link rel="stylesheet" href="/resources/css/portal.css">
 <link rel="stylesheet" href="/resources/css/portal-login.css">
+<link rel="stylesheet" href="/resources/css/portal-aluno.css">
 <link rel="stylesheet" href="/resources/css/portal-professor.css">
 
 <title>${title}</title>

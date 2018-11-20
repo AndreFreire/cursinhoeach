@@ -7,9 +7,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
-import com.cursinhoeach.cursinhoeach.controller.disciplinas.DisciplinaControllerModel;
+import com.cursinhoeach.cursinhoeach.model.DisciplinaControllerModel;
+import com.cursinhoeach.cursinhoeach.model.NotaControllerModel;
 import com.cursinhoeach.cursinhoeach.model.Pessoa;
 import com.cursinhoeach.cursinhoeach.repository.DisciplinaRepository;
+import com.cursinhoeach.cursinhoeach.repository.NotaRepository;
 import com.cursinhoeach.cursinhoeach.repository.PessoaRepository;
 
 @Controller
@@ -19,6 +21,9 @@ public class PortalController {
 
 	@Autowired
 	DisciplinaRepository disciplinaRepository;
+	
+	@Autowired
+	NotaRepository notaRepository;
 
 	@GetMapping("/portal-login")
 	public String portalLogin(Model model, HttpSession session) {
@@ -44,6 +49,8 @@ public class PortalController {
 			session.setAttribute("pessoaid", p.getId());
 			session.setAttribute("disciplina", disciplina);
 			model.addAttribute("model",disciplinaModel );
+		}else if(p.getTipo().equals("0")) {
+			model.addAttribute("model", new NotaControllerModel(notaRepository.findNotasPessoa(p.getId())));
 		}
 		return "portal";
 	}

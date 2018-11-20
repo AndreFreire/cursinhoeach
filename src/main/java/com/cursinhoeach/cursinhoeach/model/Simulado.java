@@ -1,7 +1,5 @@
 package com.cursinhoeach.cursinhoeach.model;
 
-import java.sql.Date;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
@@ -18,7 +16,7 @@ public class Simulado {
 	@Id
 	private String materia;
 	private String notamax;
-	private Date dataRealizado;
+
 	
 	public String getNome() {
 		return nome;
@@ -38,12 +36,6 @@ public class Simulado {
 	public void setNotamax(String notamax) {
 		this.notamax = notamax;
 	}
-	public Date getDataRealizado() {
-		return dataRealizado;
-	}
-	public void setDataRealizado(Date dataRealizado) {
-		this.dataRealizado = dataRealizado;
-	}
-	
+		
 	
 }

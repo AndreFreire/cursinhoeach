@@ -16,7 +16,7 @@ create table nota(
     nota varchar(4) not null,
     CONSTRAINT PK_nota PRIMARY KEY (simulado,pessoaid,materia),
     foreign key (pessoaid) references pessoa(id),
-    foreign key (simulado) references simulado(nome)
+    foreign key (simulado,materia) references simulado(nome,materia)
 );
 
 
@@ -24,7 +24,6 @@ create table simulado(
 	nome varchar(25) not null,
     materia varchar(25) not null,
     notamax varchar(4) not null,
-    dataRealizado date not null, 
     CONSTRAINT PK_simulado PRIMARY KEY (nome,materia)
 );
 
@@ -41,5 +40,5 @@ create table disciplina(
     CONSTRAINT PK_disciplina PRIMARY KEY (id)
 );
 
-
+drop table nota;
 
