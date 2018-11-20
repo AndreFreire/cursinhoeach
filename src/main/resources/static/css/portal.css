@@ -20,6 +20,15 @@
 	margin-top: 1.5%;
 }
 
+#wrapper .apresentacao .logout{
+	float:right;
+	cursor:pointer;
+	margin-top:-2.5em;
+	margin-right:2%;
+}
+
+
+
 .subject-teacher {
 	padding-left: 8%;
 	padding-right: 8%;

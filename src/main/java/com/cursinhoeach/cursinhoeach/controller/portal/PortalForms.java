@@ -54,5 +54,11 @@ public class PortalForms {
 		return "redirect:portal";
 	}
 	
-	
+	@RequestMapping("logout")
+	public String logout(HttpSession session ) {
+		while(session.getAttributeNames().hasMoreElements()) {
+			session.removeAttribute(session.getAttributeNames().nextElement());
+		}		
+		return "redirect:portal";
+	}
 }
