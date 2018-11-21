@@ -11,7 +11,7 @@ import com.cursinhoeach.cursinhoeach.model.Pessoa;
 
 public class FileWriter {
 
-	String materias = "Alunos;Português;Matemática;História;Geografia;Biologia;Filosofia;Sociologia;Literatura;Química;Física;Inglês\n";
+	String materias = "Alunos,Português,Matemática,História,Geografia,Biologia,Filosofia,Sociologia,Literatura,Química,Física,Inglês\n";
 
 	List<String> lines = new ArrayList<>();
 	InputStream in;
@@ -33,6 +33,7 @@ public class FileWriter {
 	}
 	
 	public InputStream getInputStream() {
+		
 		return in;
 	}
 }

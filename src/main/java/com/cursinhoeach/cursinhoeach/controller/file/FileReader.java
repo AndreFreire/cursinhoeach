@@ -17,16 +17,12 @@ public class FileReader {
 	private String nomeSimulado;
 
 	public FileReader(MultipartFile file) {
-		nomeSimulado = file.getOriginalFilename();
-		if (!nomeSimulado.endsWith(".csv")) {
-			return;
-		}
-		nomeSimulado = nomeSimulado.replace(".csv", "");
+		nomeSimulado = file.getOriginalFilename().substring(0, file.getOriginalFilename().lastIndexOf("."));
 		BufferedReader br;
 		try {
 			String line;
 			InputStream is = file.getInputStream();
-			br = new BufferedReader(new InputStreamReader(is));
+			br = new BufferedReader(new InputStreamReader(is, "iso-8859-1"));
 			while ((line = br.readLine()) != null) {
 				csvContent.add(line);
 			}
@@ -41,8 +37,8 @@ public class FileReader {
 	}
 
 	public String[] getDisciplinas() {
-		String result = csvContent.get(0).replaceFirst("\\w+;?(?=.*)", "");
-		return result.split(";");
+		String result = csvContent.get(0).replaceFirst("\\w+(,|;)?(?=.*)", "");
+		return result.split("(,|;)");
 	}
 
 	private List<String> getNotasFromCsv() {
@@ -54,8 +50,8 @@ public class FileReader {
 	public List<Nota> getNotasAlunos() {
 		List<Nota> result = new ArrayList<>();
 		for (String notaAtual : this.getNotasFromCsv()) {
-			String[] linha = notaAtual.split(";");
-			if(linha.length<=0) {
+			String[] linha = notaAtual.split("(,|;)");
+			if (linha.length <= 0) {
 				continue;
 			}
 			String pessoaId = linha[0].split("-")[0];
@@ -65,7 +61,7 @@ public class FileReader {
 				notaAluno.setPessoaid(pessoaId);
 				notaAluno.setSimulado(nomeSimulado);
 				notaAluno.setMateria(item);
-				if (i >= linha.length) {
+				if (i >= linha.length ||linha[i].equals("")) {
 					notaAluno.setNota("-");
 				} else {
 					notaAluno.setNota(linha[i]);

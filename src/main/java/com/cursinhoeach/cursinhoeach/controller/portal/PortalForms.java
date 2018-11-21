@@ -95,7 +95,6 @@ public class PortalForms {
 		if (session.getAttribute("usuarioInvalido") == null || (boolean) session.getAttribute("usuarioInvalido")) {
 			return "redirect:portal-login";
 		}
-
 		FileReader fileReader = new FileReader(file);
 		notaRepository.saveAll(fileReader.getNotasAlunos());
 		return "redirect:portal";
@@ -107,15 +106,11 @@ public class PortalForms {
 		try {
 
 			InputStream is = new FileWriter(alunos).getInputStream();
-//			StringWriter writer = new StringWriter();
-//			IOUtils.copy(is, writer);
-//			String theString = writer.toString();
-//			System.out.println(theString);
 			org.apache.commons.io.IOUtils.copy(is, response.getOutputStream());
 			response.setCharacterEncoding("UTF-8");
-			response.setContentType("text/csv; charset=UTF-8");
+			response.setContentType("text/plain; charset=UTF-8");
 			response.setHeader("charset", "UTF-8");
-			response.setHeader("Content-Disposition", "attachment; filename="+URLEncoder.encode("modelo.csv", "UTF-8"));
+			response.setHeader("Content-Disposition", "attachment; filename="+URLEncoder.encode("modelo.txt", "UTF-8"));
 			response.flushBuffer();
 		} catch (IOException ex) {
 
@@ -123,28 +118,5 @@ public class PortalForms {
 		}
 	}
 	
-//	@RequestMapping(value = "downloadFile", method = RequestMethod.GET)
-//	public ResponseEntity<byte[]> downloadFile(HttpServletResponse response) {
-//		List<Pessoa> alunos = pessoaRepository.findAlunos();
-//		InputStream is = new FileWriter(alunos).getInputStream();
-//		StringWriter writer = new StringWriter();
-//		try {
-//			IOUtils.copy(is, writer,"UTF-8");
-//		} catch (IOException e) {
-//			// TODO Auto-generated catch block
-//			e.printStackTrace();
-//		}
-//		String theString = writer.toString();
-//		System.out.println(theString);
-//	    byte[] output = theString.getBytes();
-//
-//	    HttpHeaders responseHeaders = new HttpHeaders();
-//	    responseHeaders.set("charset", "UTF-8");
-//	    responseHeaders.setContentType(MediaType.valueOf("text/csv"));
-//	    responseHeaders.setContentLength(output.length);
-//	    responseHeaders.set("Content-disposition", "attachment; filename=model.csv");
-//	    
-//	    return new ResponseEntity<byte[]>(output, responseHeaders, HttpStatus.OK);
-//	}
 
 }

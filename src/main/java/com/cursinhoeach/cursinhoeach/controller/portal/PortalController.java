@@ -50,8 +50,6 @@ public class PortalController {
 			model.addAttribute("model",disciplinaModel );
 		}else if(p.getTipo().equals("0")) {
 			model.addAttribute("model", new NotaControllerModel(notaRepository.findNotasPessoa(p.getId())));
-		}else if(p.getTipo().equals("2")) {
-			
 		}
 		return "portal";
 	}
