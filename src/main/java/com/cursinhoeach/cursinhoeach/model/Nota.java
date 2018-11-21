@@ -42,6 +42,11 @@ public class Nota {
 	public void setNota(String nota) {
 		this.nota = nota;
 	}
+	@Override
+	public String toString() {
+		return "Nota [simulado=" + simulado + ", pessoaid=" + pessoaid + ", materia=" + materia + ", nota=" + nota
+				+ "]";
+	}
 	
 	
 }

@@ -1,4 +1,4 @@
-<%@page language="java" contentType="application/json;charset=ISO-8859-1"
+<%@page language="java" contentType="text/plain;charset=UTF-8"
     pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- https://codepen.io/dhanushbadge/pen/olsvi -->

@@ -18,17 +18,9 @@ create table nota(
     materia varchar(25) not null,
     nota varchar(4) not null,
     CONSTRAINT PK_nota PRIMARY KEY (simulado,pessoaid,materia),
-    foreign key (pessoaid) references pessoa(id),
-    foreign key (simulado,materia) references simulado(nome,materia)
+    foreign key (pessoaid) references pessoa(id)
 );
 
-
-create table simulado(
-	nome varchar(25) not null,
-    materia varchar(25) not null,
-    notamax varchar(4) not null,
-    CONSTRAINT PK_simulado PRIMARY KEY (nome,materia)
-);
 
 create table disciplina(
 	id int not null,
@@ -39,5 +31,7 @@ create table disciplina(
     CONSTRAINT UC_Disciplina UNIQUE (grupoConteudo,conteudo,nomeDisciplina),
     CONSTRAINT PK_disciplina PRIMARY KEY (id)
 );
+
+update pessoa set disciplina =null where id = "123";
 
 select * from pessoa;
