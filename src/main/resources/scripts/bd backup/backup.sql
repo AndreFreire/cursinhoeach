@@ -24,15 +24,12 @@ DROP TABLE IF EXISTS `disciplina`;
  SET character_set_client = utf8mb4 ;
 CREATE TABLE `disciplina` (
   `id` int(11) NOT NULL,
-  `idpessoa` varchar(15) NOT NULL,
   `nomedisciplina` varchar(25) NOT NULL,
   `grupoconteudo` varchar(255) NOT NULL,
   `conteudo` varchar(255) NOT NULL,
   `link` varchar(2555) NOT NULL,
   PRIMARY KEY (`id`),
-  UNIQUE KEY `UC_Disciplina` (`grupoconteudo`,`conteudo`,`nomedisciplina`),
-  KEY `idpessoa` (`idpessoa`),
-  CONSTRAINT `disciplina_ibfk_1` FOREIGN KEY (`idpessoa`) REFERENCES `pessoa` (`id`)
+  UNIQUE KEY `UC_Disciplina` (`grupoconteudo`,`conteudo`,`nomedisciplina`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -42,7 +39,7 @@ CREATE TABLE `disciplina` (
 
 LOCK TABLES `disciplina` WRITE;
 /*!40000 ALTER TABLE `disciplina` DISABLE KEYS */;
-INSERT INTO `disciplina` VALUES (1,'456','Biologia','Citologia','Composição Química e Bioquímica - Metabolismo','https://www.10emtudo.com.br/aula/vestibular/composicao_quimica_e_bioquimica_metabolismo/'),(2,'456','Biologia','Citologia','Composição Química - Modelos; Funções; especializações','https://www.10emtudo.com.br/aula/vestibular/composicao_quimica_modelos_funcoes_especializacoes/'),(3,'456','Biologia','Citologia','Permeabilidade','https://www.10emtudo.com.br/aula/vestibular/permeabilidade/'),(4,'456','Biologia','Citologia','Funções Metabólicas','https://www.10emtudo.com.br/aula/vestibular/funcoes_metabolicas/'),(5,'456','Biologia','Embriologia Animal','Tipos de óvulos (ovos): classificação e ocorrência','https://www.10emtudo.com.br/aula/vestibular/tipos_de_ovulos_ovos_classificacao_e_ocorrencia/'),(6,'456','Biologia','Embriologia Animal','Segmentação (clivagem): tipos','https://www.10emtudo.com.br/aula/vestibular/segmentacao_clivagem_tipos/'),(7,'456','Biologia','Embriologia Animal','Desenvolvimento Embrionário do Anfioxo','https://www.10emtudo.com.br/aula/vestibular/desenvolvimento_embrionario_do_anfioxo/'),(8,'456','Biologia','Embriologia Animal','Folhetos Embrionários: tipos e funções','https://www.10emtudo.com.br/aula/vestibular/folhetos_embrionarios_tipos_e_funcoes/');
+INSERT INTO `disciplina` VALUES (1,'Biologia','Citologia','Composição Química e Bioquímica - Metabolismo','https://www.10emtudo.com.br/aula/vestibular/composicao_quimica_e_bioquimica_metabolismo/'),(2,'Biologia','Citologia','Composição Química - Modelos; Funções; especializações','https://www.10emtudo.com.br/aula/vestibular/composicao_quimica_modelos_funcoes_especializacoes/'),(3,'Biologia','Citologia','Permeabilidade','https://www.10emtudo.com.br/aula/vestibular/permeabilidade/'),(4,'Biologia','Citologia','Funções Metabólicas','https://www.10emtudo.com.br/aula/vestibular/funcoes_metabolicas/'),(6,'Biologia','Embriologia Animal','Segmentação (clivagem): tipos','https://www.10emtudo.com.br/aula/vestibular/segmentacao_clivagem_tipos/'),(7,'Biologia','Embriologia Animal','Desenvolvimento Embrionário do Anfioxo','https://www.10emtudo.com.br/aula/vestibular/desenvolvimento_embrionario_do_anfioxo/'),(8,'Biologia','Embriologia Animal','Folhetos Embrionários: tipos e funções','https://www.10emtudo.com.br/aula/vestibular/folhetos_embrionarios_tipos_e_funcoes/'),(9,'Biologia','Sistema Nervoso','Sistema Nervoso','https://www.10emtudo.com.br/aula/vestibular/sistema_nervoso/'),(10,'Historia','Hist�ria Geral','Pr� - Hist�ria','https://www.10emtudo.com.br/aula/vestibular/pre_historia/');
 /*!40000 ALTER TABLE `disciplina` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -83,8 +80,7 @@ CREATE TABLE `nota` (
   PRIMARY KEY (`simulado`,`pessoaid`,`materia`),
   KEY `pessoaid` (`pessoaid`),
   KEY `simulado` (`simulado`,`materia`),
-  CONSTRAINT `nota_ibfk_1` FOREIGN KEY (`pessoaid`) REFERENCES `pessoa` (`id`),
-  CONSTRAINT `nota_ibfk_2` FOREIGN KEY (`simulado`, `materia`) REFERENCES `simulado` (`nome`, `materia`)
+  CONSTRAINT `nota_ibfk_1` FOREIGN KEY (`pessoaid`) REFERENCES `pessoa` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -94,7 +90,7 @@ CREATE TABLE `nota` (
 
 LOCK TABLES `nota` WRITE;
 /*!40000 ALTER TABLE `nota` DISABLE KEYS */;
-INSERT INTO `nota` VALUES ('Fuvest','789','Biologia','4'),('Fuvest','789','Filosofia','3'),('Fuvest','789','Física','5'),('Fuvest','789','Geografia','5'),('Fuvest','789','História','6'),('Fuvest','789','Inglês','5'),('Fuvest','789','Literatura','1'),('Fuvest','789','Matemática','7'),('Fuvest','789','Português','9'),('Fuvest','789','Química','10'),('Fuvest','789','Sociologia','2'),('Ita','789','Física','5'),('Ita','789','Inglês','4'),('Ita','789','Literatura','7'),('Ita','789','Matemática','6'),('Ita','789','Português','9'),('Ita','789','Química','8');
+INSERT INTO `nota` VALUES ('Fuvest','789','Biologia','4'),('Fuvest','789','Filosofia','3'),('Fuvest','789','Física','5'),('Fuvest','789','Geografia','5'),('Fuvest','789','História','6'),('Fuvest','789','Inglês','5'),('Fuvest','789','Literatura','1'),('Fuvest','789','Matemática','7'),('Fuvest','789','Português','9'),('Fuvest','789','Química','10'),('Fuvest','789','Sociologia','2'),('Ita','789','Física','5'),('Ita','789','Inglês','4'),('Ita','789','Literatura','7'),('Ita','789','Matemática','6'),('Ita','789','Português','9'),('Ita','789','Química','8'),('teste','789','Biologia','0,31'),('teste','789','Filosofia','9,89'),('teste','789','F�sica','9,13'),('teste','789','Geografia','4,77'),('teste','789','Hist�ria','4,1'),('teste','789','Ingl�s','7,73'),('teste','789','Literatura','2,64'),('teste','789','Matem�tica','5,11'),('teste','789','Portugu�s','7,39'),('teste','789','Qu�mica','7,56'),('teste','789','Sociologia','6,17'),('teste','daniRodriguez','Biologia','9,74'),('teste','daniRodriguez','Filosofia','0,75'),('teste','daniRodriguez','F�sica','5,5'),('teste','daniRodriguez','Geografia','5,36'),('teste','daniRodriguez','Hist�ria','1,02'),('teste','daniRodriguez','Ingl�s','7,76'),('teste','daniRodriguez','Literatura','2,7'),('teste','daniRodriguez','Matem�tica','4,89'),('teste','daniRodriguez','Portugu�s','3,2'),('teste','daniRodriguez','Qu�mica','0'),('teste','daniRodriguez','Sociologia','6,85');
 /*!40000 ALTER TABLE `nota` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -108,9 +104,10 @@ DROP TABLE IF EXISTS `pessoa`;
 CREATE TABLE `pessoa` (
   `nome` varchar(25) NOT NULL,
   `sobrenome` varchar(25) NOT NULL,
-  `id` varchar(15) NOT NULL,
+  `id` varchar(50) NOT NULL,
   `tipo` varchar(1) NOT NULL,
   `senha` varchar(25) NOT NULL,
+  `disciplina` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
@@ -121,33 +118,8 @@ CREATE TABLE `pessoa` (
 
 LOCK TABLES `pessoa` WRITE;
 /*!40000 ALTER TABLE `pessoa` DISABLE KEYS */;
-INSERT INTO `pessoa` VALUES ('Samuel','Silva','123','2','123'),('Daniel','Romão','456','1','456'),('Ricardo','Oliveira','789','0','789');
+INSERT INTO `pessoa` VALUES ('Samuel','Silva','123','2','123',NULL),('Daniel','Romão','456','1','456','Biologia'),('Ricardo','Oliveira','789','0','789',NULL),('Daniel','Rodriguez','daniRodriguez','0','123',NULL),('Gustavo ','Araujo','guAraujo','1','123','Historia');
 /*!40000 ALTER TABLE `pessoa` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `simulado`
---
-
-DROP TABLE IF EXISTS `simulado`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
- SET character_set_client = utf8mb4 ;
-CREATE TABLE `simulado` (
-  `nome` varchar(25) NOT NULL,
-  `materia` varchar(25) NOT NULL,
-  `notamax` varchar(4) NOT NULL,
-  PRIMARY KEY (`nome`,`materia`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `simulado`
---
-
-LOCK TABLES `simulado` WRITE;
-/*!40000 ALTER TABLE `simulado` DISABLE KEYS */;
-INSERT INTO `simulado` VALUES ('Enem','Biologia','10'),('Enem','Filosofia','5'),('Enem','Física','10'),('Enem','Geografia','10'),('Enem','História','10'),('Enem','Inglês','5'),('Enem','Literatura','10'),('Enem','Matemática','10'),('Enem','Português','10'),('Enem','Química','10'),('Enem','Sociologia','5'),('Fuvest','Biologia','10'),('Fuvest','Filosofia','5'),('Fuvest','Física','10'),('Fuvest','Geografia','10'),('Fuvest','História','10'),('Fuvest','Inglês','5'),('Fuvest','Literatura','10'),('Fuvest','Matemática','10'),('Fuvest','Português','10'),('Fuvest','Química','10'),('Fuvest','Sociologia','5'),('Ita','Física','10'),('Ita','Inglês','5'),('Ita','Literatura','10'),('Ita','Matemática','10'),('Ita','Português','10'),('Ita','Química','10');
-/*!40000 ALTER TABLE `simulado` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
@@ -159,4 +131,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2018-11-20 16:18:09
+-- Dump completed on 2018-11-21 11:53:04

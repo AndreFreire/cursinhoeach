@@ -32,6 +32,4 @@ create table disciplina(
     CONSTRAINT PK_disciplina PRIMARY KEY (id)
 );
 
-update pessoa set disciplina =null where id = "123";
 
-select * from pessoa;
