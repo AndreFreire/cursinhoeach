@@ -4,15 +4,18 @@ public class DescricaoDisciplina {
 
 	public static String biologiaDescription = "Ciência que estuda a vida e os organismos vivos, sua estrutura, crescimento, funcionamento, reprodução, origem, evolução, distribuição, bem como suas relações com o ambiente e entre si; biociência, ciências biológicas [Compreende várias outras ciências especializadas, como, p.ex., a ecologia, a bioquímica, a genética, a zoologia e a botânica.].\r\n"
 			+ "";
-	public static String filosofiaDescription;
-	public static String fisicaDescription;
-	public static String geografiaDescription;
-	public static String historiaDescription;
-	public static String inglesDescription;
-	public static String literaturaDescription;
-	public static String matematicaDescription;
-	public static String portuguesDescription;
-	public static String quimicaDescription;
-	public static String sociologiaDescription;
+	public static String filosofiaDescription = "Filosofia amor pela sabedoria, experimentado apenas pelo ser humano consciente de sua própria ignorância [Segundo autores clássicos, sentido original do termo, atribuído ao filósofo grego Pitágoras (sVI a.C.).].";
+	public static String fisicaDescription = "Física ciência que investiga as leis do universo no que diz respeito à matéria e à energia, que são seus constituintes, e suas interações.";
+	public static String geografiaDescription = "A Geografia é uma ciência humana, ou seja, ela investiga os fenômenos que se relacionam aos seres humanos e às suas práticas. Mais do que isso, a Geografia é a ciência que estuda o espaço geográfico.\r\n"
+			+ "\r\n" + "E o que é espaço geográfico?";
+	public static String historiaDescription = "História é a ciência que estuda o ser humano e sua ação no tempo e no espaço concomitantemente à análise de processos e eventos ocorridos no passado. O termo \"História\" também pode significar toda a informação do passado arquivada em todas as línguas por todo o mundo, por intermédio de registos históricos.";
+	public static String inglesDescription = "Inglês (English) é uma língua germânica ocidental que surgiu nos reinos anglo-saxônicos da Inglaterra e se espalhou para o que viria a tornar-se o sudeste da Escócia, sob a influência do reino anglo medieval da Nortúmbria. Após séculos de extensa influência da Grã-Bretanha e do Reino Unido desde o século XVIII, através do Império Britânico, e dos Estados Unidos desde meados do século XX, o inglês tem sido amplamente disperso em todo o planeta, tornando-se a principal língua do discurso internacional e uma língua franca em muitas regiões.";
+	public static String literaturaDescription = "A palavra Literatura vem do latim \"litteris\" que significa \"Letras\", e possivelmente uma tradução do grego \"grammatikee\". Em latim, literatura significa uma instrução ou um conjunto de saberes ou habilidades de escrever e ler bem, e se relaciona com as técnicas da gramática, da retórica e da poética. Por extensão, se refere especificamente à arte ou ofício de escrever. O termo Literatura também é usado como referência a um conjunto escolhido de textos como, por exemplo a literatura portuguesa, a literatura espanhola, a literatura inglesa, a literatura brasileira, a literatura japonesa, etc.";
+	public static String matematicaDescription = "A matemática é a ciência do raciocínio lógico e abstrato, que estuda quantidades, medidas, espaços, estruturas, variações e estatísticas. Um trabalho matemático consiste em procurar por padrões, formular conjecturas e, por meio de deduções rigorosas a partir de axiomas e definições, estabelecer novos resultados. A matemática desenvolveu-se principalmente na Mesopotâmia, no Egito, na Grécia, na Índia e no Oriente Médio. A partir da Renascença, o desenvolvimento da matemática intensificou-se na Europa, quando novas descobertas científicas levaram a um crescimento acelerado que dura até os dias de hoje.";
+	public static String portuguesDescription = "O português é o quinto idioma mais falado mundo - mais de 260 milhões de pessoas utilizam como língua principal para se comunicarem. Entre os países que o tem como idioma oficial, citamos o Brasil, Portugal, Angola, Cabo Verde, Guiné-Bissau, Macau, Moçambique, São Tomé e Príncipe, Timor Leste e Guiné Equatorial (Leia mais em Lusofonia).\r\n"
+			+ "\r\n"
+			+ "Em 1990 foi criado o Novo Acordo Ortográfico da Língua Portuguesa, que tem por objetivo padronizar a escrita de algumas palavras em todos os países que o utilizam oficialmente. O Brasil aderiu ao acordo em 2009.";
+	public static String quimicaDescription = "Química é a ciência que estuda a composição, estrutura, propriedades da matéria, as mudanças sofridas por ela durante as reações químicas e a sua relação com a energia.";
+	public static String sociologiaDescription = "Sociologia estudo científico da organização e do funcionamento das sociedades humanas e das leis fundamentais que regem as relações sociais, as instituições etc.";
 
 }

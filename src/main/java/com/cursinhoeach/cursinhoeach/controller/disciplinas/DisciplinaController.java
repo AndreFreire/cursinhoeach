@@ -63,7 +63,7 @@ public class DisciplinaController {
 	@GetMapping("/ingles")
 	public String ingles(Model model) {
 		model.addAttribute("title", "Inglês");
-		model.addAttribute("image","ingles.jpg");
+		model.addAttribute("image","ingles.png");
 		model.addAttribute("description",DescricaoDisciplina.inglesDescription);
 		model.addAttribute("model",new DisciplinaControllerModel(disciplinaRepository.findMateria("Ingles")));
 		return "materia";
