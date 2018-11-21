@@ -29,7 +29,6 @@ public class FileReader {
 			br = new BufferedReader(new InputStreamReader(is));
 			while ((line = br.readLine()) != null) {
 				csvContent.add(line);
-				System.out.println(line);
 			}
 
 		} catch (IOException e) {
