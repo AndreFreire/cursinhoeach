@@ -1,10 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 
 <div class="subject-teacher">
 	<h4>${model.getMateria()}</h4>
-
 	<div class="row list-subjects ">
 		<div class="col-12">
 			<ul class="list-group" id="list-group-accordion">
@@ -41,9 +38,9 @@
 					<div id="item-newGroupItem">
 						<ul class="list-group">
 							<li class="list-group-item">
-								<form action="addSubject" method="post">
-									<input type="text" name="group" placeholder="Grupo" class="input-addSubject input-grupo"/> <input
-										type="text" name="subject" placeholder="Conteúdo" class="input-addSubject input-conteudo"/> <input
+								<form action="addSubject" method="post" accept-charset="UTF-8">
+									<input  type="text" name="grupoconteudo" placeholder="Grupo" class="input-addSubject input-grupo"/> <input
+										type="text" name="conteudo" placeholder="Conteúdo" class="input-addSubject input-conteudo"/> <input
 										type="text" name="link" placeholder="Link" class="input-addSubject input-link"/>
 									<button type="submit" class="add-subject" title="adcionar">
 										<i class="fa fa-check"></i>

@@ -1,12 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@page language="java" contentType="application/json;charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!-- https://codepen.io/dhanushbadge/pen/olsvi -->
 <!DOCTYPE html>
 <html>
 <head>
 <link rel="shortcut icon" href="/resources/images/logo.png" />
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -44,6 +44,8 @@
 <link rel="stylesheet" href="/resources/css/portal-login.css">
 <link rel="stylesheet" href="/resources/css/portal-aluno.css">
 <link rel="stylesheet" href="/resources/css/portal-professor.css">
+<link rel="stylesheet" href="/resources/css/portal-admin.css">
+<link rel="stylesheet" href="/resources/css/cadastrar-pessoa.css">
 
 <title>${title}</title>
 </head>

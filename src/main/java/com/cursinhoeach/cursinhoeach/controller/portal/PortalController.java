@@ -43,10 +43,9 @@ public class PortalController {
 		}
 		Pessoa p = (Pessoa) session.getAttribute("pessoa");
 		if (p.getTipo().equals("1")) {//Professor
-			String disciplina = disciplinaRepository.findProfessorDisciplina(p.getId());
+			String disciplina = p.getDisciplina();
 			DisciplinaControllerModel disciplinaModel = new DisciplinaControllerModel(disciplinaRepository.findMateria(disciplina));
 			disciplinaModel.setMateria(disciplina);
-			session.setAttribute("pessoaid", p.getId());
 			session.setAttribute("disciplina", disciplina);
 			model.addAttribute("model",disciplinaModel );
 		}else if(p.getTipo().equals("0")) {

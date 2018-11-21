@@ -4,10 +4,13 @@ use Cursinho;
 create table pessoa (
      nome varchar(25) not null,
      sobrenome varchar(25) not null,
-     id varchar(15) not null,
+     id varchar(50) not null,
      tipo varchar(1) not null,
      senha varchar(25) not null,
+     disciplina varchar(255),
      constraint PK_id primary key (id));
+
+
 
 create table nota(
 	simulado varchar(25) not null,
@@ -27,18 +30,14 @@ create table simulado(
     CONSTRAINT PK_simulado PRIMARY KEY (nome,materia)
 );
 
-
 create table disciplina(
 	id int not null,
-	idpessoa varchar(15) not null,
     nomedisciplina varchar(25) not null,
     grupoconteudo varchar(255) not null,
     conteudo varchar(255) not null,
     link varchar(2555) not null,
     CONSTRAINT UC_Disciplina UNIQUE (grupoConteudo,conteudo,nomeDisciplina),
-    foreign key (idPessoa) references pessoa(id),
     CONSTRAINT PK_disciplina PRIMARY KEY (id)
 );
 
-drop table nota;
-
+select * from pessoa;

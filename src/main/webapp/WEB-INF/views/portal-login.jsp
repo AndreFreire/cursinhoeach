@@ -20,12 +20,12 @@
 			%>
 
 			<input type="text" class="form-control" placeholder="ID"
-				aria-describedby="basic-addon1" name="login">
+				aria-describedby="basic-addon1" name="id">
 			<%
 				} else {
 			%>
 			<input type="text" class="form-control" placeholder="ID Invalido"
-				aria-describedby="basic-addon1" name="login" style="color: red;">
+				aria-describedby="basic-addon1" name="id" style="color: red;">
 			<%
 				}
 			%>

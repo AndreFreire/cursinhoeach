@@ -12,10 +12,7 @@ public interface DisciplinaRepository extends CrudRepository<Disciplina, Integer
 
 	@Query(value = "SELECT * FROM disciplina where nomeDisciplina=:nomeDisciplina", nativeQuery = true)
 	List<Disciplina> findMateria(@Param("nomeDisciplina") String nomeDisciplina);
-
-	@Query(value = "SELECT nomedisciplina FROM disciplina where idpessoa=:id limit 1", nativeQuery = true)
-	String findProfessorDisciplina(@Param("id") String id);
-
+	
 	@Query(value = "SELECT id+1 FROM disciplina order by id DESC limit 1", nativeQuery = true)
 	int finalKey();
 	

@@ -12,6 +12,8 @@ public class Pessoa {
 	private String sobrenome;
 	private String tipo;// 0 = aluno; 1 = professor; 2 = admin
 	private String senha;
+	private String disciplina;
+	
 	public String getId() {
 		return id;
 	}
@@ -42,10 +44,16 @@ public class Pessoa {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	public String getDisciplina() {
+		return disciplina;
+	}
+	public void setDisciplina(String disciplina) {
+		this.disciplina = disciplina;
+	}
 	@Override
 	public String toString() {
 		return "Pessoa [id=" + id + ", nome=" + nome + ", sobrenome=" + sobrenome + ", tipo=" + tipo + ", senha="
-				+ senha + "]";
+				+ senha + ", disciplina=" + disciplina + "]";
 	}
 
 	

@@ -5,12 +5,6 @@
 	min-width:40%;
 }
 
-.table-aluno  th{ 
- 	 
+.table-aluno  th{  	 
  	text-align:left; 
  } 
-
-/* .table-aluno  td{ */
-/* 	max-width:10px; */
-/* 	border:solid black;	 */
-/* } */

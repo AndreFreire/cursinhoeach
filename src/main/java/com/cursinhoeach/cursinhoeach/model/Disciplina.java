@@ -8,15 +8,13 @@ public class Disciplina {
 
 	@Id
 	private int id;
-	private String idpessoa;
 	private String nomedisciplina;
 	private String grupoconteudo;
 	private String conteudo;
 	private String link;
 
-	public Disciplina(int id,String idPessoa, String nomeDisciplina, String grupoConteudo, String conteudo, String link) {
+	public Disciplina(int id, String nomeDisciplina, String grupoConteudo, String conteudo, String link) {
 		this.id = id;
-		this.idpessoa = idPessoa;
 		this.nomedisciplina = nomeDisciplina;
 		this.grupoconteudo = grupoConteudo;
 		this.conteudo = conteudo;
@@ -36,13 +34,6 @@ public class Disciplina {
 		this.id = id;
 	}
 
-	public String getIdpessoa() {
-		return idpessoa;
-	}
-
-	public void setIdpessoa(String idpessoa) {
-		this.idpessoa = idpessoa;
-	}
 
 	public String getNomedisciplina() {
 		return nomedisciplina;
@@ -78,7 +69,7 @@ public class Disciplina {
 
 	@Override
 	public String toString() {
-		return "Disciplina [id=" + id + ", idpessoa=" + idpessoa + ", nomedisciplina=" + nomedisciplina
+		return "Disciplina [id=" + id + ", nomedisciplina=" + nomedisciplina
 				+ ", grupoconteudo=" + grupoconteudo + ", conteudo=" + conteudo + ", link=" + link + "]";
 	}
 

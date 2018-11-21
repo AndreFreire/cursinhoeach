@@ -1,0 +1,36 @@
+#pessoa .input-group{
+	  	color:black;
+  		width:100%;
+}
+
+#pessoa .input-group-text{
+	width: 6.4em;
+}
+
+#pessoa .input-group{
+	margin-bottom:2%;
+	margin-top:2%;
+}
+
+#pessoa .btn{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  color:black;
+}
+#pessoa .btn-outline-dark:hover{
+	background-color:#DBE1FF;
+	font-weight:600;
+}
+
+.desactivate{
+	display:none;
+}
+.activate{
+	display:inline-block;
+}
+
+#disciplina .form-control{
+	display:inline-block;
+}
+
