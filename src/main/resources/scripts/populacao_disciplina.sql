@@ -6,6 +6,8 @@ insert into pessoa(nome,sobrenome,id,tipo,senha) values ('Aziz','AbSaber','461',
 insert into pessoa(nome,sobrenome,id,tipo,senha) values ('Isaac','Newton','462','1','462');
 insert into pessoa(nome,sobrenome,id,tipo,senha) values ('Marie','Curie','463','1','463');
 insert into pessoa(nome,sobrenome,id,tipo,senha) values ('George','Orwell','464','1','464');
+insert into pessoa(nome,sobrenome,id,tipo,senha) values ('Immanuel','Kant','465','1','465');
+insert into pessoa(nome,sobrenome,id,tipo,senha) values ('Emile','Durkheim','466','1','466');
 insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','457','Biologia','Citologia','Citologia','https://www.educabras.com/ensino_medio/materia/biologia/citologia');
 insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','457','Biologia','Genetica Molecular','Genetica Molecular','https://www.educabras.com/ensino_medio/materia/biologia/genetica_molecular');
 insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','457','Biologia','Embriologia Animal','Embriologia Animal','https://www.educabras.com/ensino_medio/materia/biologia/embriologia_animal');
@@ -66,3 +68,15 @@ insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link
 insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','463','Quimica','Gases','Gases','https://www.educabras.com/ensino_medio/materia/quimica/aulas/gases_estado_gasoso');
 insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','463','Quimica','Oxidacao e Reducao','Oxidacao e Reducao','https://www.educabras.com/ensino_medio/materia/quimica/aulas/oxidacao_e_reducao_balanceamento_por_oxirreducao');
 insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','464','Ingles','Gramatica','Gramatica','https://www.educabras.com/ensino_medio/materia/ingles/ingles_gramatica');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Os Sofistas','Os Sofistas','https://www.10emtudo.com.br/aula/ensino/os_sofistas/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Socrates','Socrates','https://www.10emtudo.com.br/aula/ensino/socrates/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Renascimento','Renascimento','https://www.10emtudo.com.br/aula/ensino/filosofia_do_renascimento/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Maquoavel','Maquoavel','https://www.10emtudo.com.br/aula/ensino/nicolau_maquiavel/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Racionalismo','Racionalismo','https://www.10emtudo.com.br/aula/ensino/racionalismo/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Kant','Kant','https://www.10emtudo.com.br/aula/ensino/immanuel_kant/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Iluminismo','Iluminismo','https://www.10emtudo.com.br/aula/ensino/filosofia_do_iluminismo/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','465','Filosofia','Existencialismo','Existencialismo','https://www.10emtudo.com.br/aula/ensino/o_existencialismo/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','466','Sociologia','Processos Sociais','Processos Sociais','https://www.10emtudo.com.br/aula/ensino/processos_sociais/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','466','Sociologia','A Sociedade','A Sociedade','https://www.10emtudo.com.br/aula/ensino/a_sociedade/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','466','Sociologia','Grupos Sociais','Grupos Sociais','https://www.10emtudo.com.br/aula/ensino/grupos_sociais/');
+insert into disciplina(id,idPessoa,nomeDisciplina, grupoConteudo, conteudo, link) values('1','466','Sociologia','Economia e Sociedade','Economia e Sociedade','https://www.10emtudo.com.br/aula/ensino/a_base_economica_da_sociedade/');
